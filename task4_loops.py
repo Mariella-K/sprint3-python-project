@@ -47,7 +47,8 @@ total_jp = 0
 for game in video_game_sales:
      total_na = total_na + game[NA_SALES]
      total_jp = total_jp + game[JP_SALES]
-print(total_na, total_jp)
+print(f"Total NA sales: {total_na}")
+print(f"Total NA sales: {total_jp}")
 if total_na > total_jp:
      print("North America had higher sales")
 elif total_jp > total_na:
