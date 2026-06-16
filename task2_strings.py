@@ -34,9 +34,10 @@ JP_SALES = 8
 GLOBAL_SALES = 9
 
 messy_names = ['  Wii Sports  ', 'TETRIS', '  mario kart WII']
-
+game = video_game_sales[0]
 game_name = video_game_sales[4][NAME]
 print(game_name[:7])
 for name in messy_names:
    print(name.strip().lower())
-print(f"#1 Best Seller: Wii Sports (2006) - $82.74M global sales")
+
+print(f"#1 Best Seller:  {game[NAME]} ({game[YEAR]}) - ${game[GLOBAL_SALES]}M global sales")
